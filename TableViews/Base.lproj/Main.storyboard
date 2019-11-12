@@ -57,7 +57,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Countries" id="2Nl-6v-mmb">
-                        <barButtonItem key="rightBarButtonItem" title="Countries" id="hpv-7M-UUN">
+                        <barButtonItem key="rightBarButtonItem" title="Sort Ascending" id="hpv-7M-UUN">
                             <connections>
                                 <action selector="sortButtonPressed:" destination="BYZ-38-t0r" id="pWE-5P-DwU"/>
                             </connections>

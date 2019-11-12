@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private var sortAscending = false
+    private var sortAscending = true
     
     
     @IBAction func sortButtonPressed(_ sender: UIBarButtonItem) {
@@ -50,10 +50,10 @@ class ViewController: UIViewController {
             countries = Country.countries.sorted { $0.name < $1.name }
             //our table view reloads because we are using a property observer didSet {...}
             //update the UIBarButtonItem title
-            navigationItem.rightBarButtonItem?.title = "Sort Ascending"
+            navigationItem.rightBarButtonItem?.title = "Sort Descending"
         } else  {
             countries = Country.countries.sorted { $0.name > $1.name }
-            navigationItem.rightBarButtonItem?.title = "Sort Descending"
+            navigationItem.rightBarButtonItem?.title = "Sort Ascending"
         }
     }
     
@@ -69,14 +69,12 @@ class ViewController: UIViewController {
         
         
         print("There are \(Country.countries.count) countries in our struct.")
+        
+        sortData(true)
     }
 
 
 }
-
-
-
-
 
 
 
