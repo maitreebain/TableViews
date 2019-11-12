@@ -30,7 +30,36 @@ struct Country {
     Country(name: "Mexico 🇲🇽", description: "One of North America's biggest countries, known for its great tasting spices and food and hard working people", continent: "North America"),
     Country(name: "Russia 🇷🇺", description: "Largest country in the world. It shares borders with 14 countries and has 9 time zones. Russia won World War 2. National dish is Vodka.", continent: "Europe"),
   ]
-  
+
+    static func getSections() -> [[Country]] {
+      // goes through our countries array and sorts all the elements by continent
+      // < means ascending, e.g a....z
+      // > meand descending, e.g z.....a
+      let sortedContinents = countries.sorted { $0.continent < $1.continent }
+      
+      // creates unique continent titles
+      let continentTitles: Set<String> = Set(countries.map { $0.continent })
+      
+      var sectionsArr = Array(repeating: [Country](), count: continentTitles.count)
+      // created 5 empty arrays of type [Country]
+      // [[],[],[],[],[]]
+      
+      // iterate through our countries array and add to the relevant section
+      var currentIndex = 0
+      var currentContinent = sortedContinents.first?.continent ?? "Pursuit" // e.g Asia
+      for country in sortedContinents {
+        if country.continent == currentContinent {
+          // add to current section
+          sectionsArr[currentIndex].append(country)
+        } else { // visiting a new continent
+          currentIndex += 1
+          currentContinent = country.continent // updating the current continent's value
+          sectionsArr[currentIndex].append(country)
+        }
+      }
+      return sectionsArr
+    }
+     
   var thumbnailImageName: String {
     let str = name.components(separatedBy: " ").joined().dropLast().description.lowercased()
     return str + "_tn"
@@ -40,4 +69,5 @@ struct Country {
      let str = name.components(separatedBy: " ").joined().dropLast().description.lowercased()
      return str
   }
+    
 }

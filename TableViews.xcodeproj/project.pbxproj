@@ -14,6 +14,7 @@
 		80A811BE2379BE4F00E1D52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A811BD2379BE4F00E1D52C /* Assets.xcassets */; };
 		80A811C12379BE4F00E1D52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A811BF2379BE4F00E1D52C /* LaunchScreen.storyboard */; };
 		80A811C92379BE9600E1D52C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A811C82379BE9600E1D52C /* Country.swift */; };
+		80DC023E237B1C8200C47EA2 /* ContinentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC023D237B1C8200C47EA2 /* ContinentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		80A811C02379BE4F00E1D52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A811C22379BE4F00E1D52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A811C82379BE9600E1D52C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		80DC023D237B1C8200C47EA2 /* ContinentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				80A811B82379BE4E00E1D52C /* ViewController.swift */,
 				80A811C82379BE9600E1D52C /* Country.swift */,
 				80A811BA2379BE4E00E1D52C /* Main.storyboard */,
+				80DC023D237B1C8200C47EA2 /* ContinentsViewController.swift */,
 				80A811BD2379BE4F00E1D52C /* Assets.xcassets */,
 				80A811BF2379BE4F00E1D52C /* LaunchScreen.storyboard */,
 				80A811C22379BE4F00E1D52C /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DC023E237B1C8200C47EA2 /* ContinentsViewController.swift in Sources */,
 				80A811C92379BE9600E1D52C /* Country.swift in Sources */,
 				80A811B92379BE4E00E1D52C /* ViewController.swift in Sources */,
 				80A811B52379BE4E00E1D52C /* AppDelegate.swift in Sources */,
